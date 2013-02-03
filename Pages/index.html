@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>不忘初心，方得始终。</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta property="wb:webmaster" content="9471e8063cf6949a" />
+<link rel="shortcut icon" href="http://lovejiani.duapp.com/favicon.ico">
+<!--
+The rain falls because the sky can no longer handle its weight.
+   Just like the tears fall because the heart can no longer handle the pain
+
+佳妮，我错了，能原谅我吗？
+https://github.com/kawaiiushio/lovejiani
+-->
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">*  Encountered very kind of you,</span><br />
+				<span class="space"/><span class="comments">*  So I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Shagou"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Jiani"</span>);<br />
+				<span class="comments">// Oct 6, 2012, I told you I love you.</span><br />
+				i.love(u);<br />
+				<span class="comments">// Unluckily, you don't accepted and became my girlfriend eversince.</span><br />
+				i.lose(u);<br />
+				<span class="comments">// Since then, I miss u every day.</span><br />
+				i.miss(u);<br />
+				<span class="comments">// Although it is not the right time ,the person who I meet is right..</span><br />
+				i.takeCareOf(u);<br />
+				<span class="comments">// I thought Perhaps you don't you like me.</span><br />
+				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
+				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (isHesitate) {<br />
+				<span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/><span class="comments">// It's not the goodbye that hurts, but the flashbacks that follow.</span><br />
+				<span class="placeholder"/><span class="comments">// You are all to me.</span><br />
+				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				}<br />
+				<span class="comments">// But it's time to face the truth.</span><br />
+				i.miss(<font color="red">u</font>);<br />
+				I will never forget you. <br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Jiani, I have met you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						I will never forget you. <br/>
+						<div class="signature"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Powered by <a href="https://github.com/hackerzhou/Love">hackerzhou</a> & Thanks <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
+			Copyleft 2013  <script type="text/javascript" charset="utf-8"></script><a href='http://weibo.com/319880777/'>你的傻狗</a>  ❤  
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2011, 06, 23);
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "❤  您的浏览器不支持HTML5技术<br/>推荐使用 Chrome 浏览器 喵~ ＞▽＜ "; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>

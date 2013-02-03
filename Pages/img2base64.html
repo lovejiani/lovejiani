@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Image to Base64 converter</title>
+<link rel="shortcut icon" href=“http://lovejiani.duapp.com/favicon.ico">
+<!--
+https://github.com/lovejs/Img-to-Base64-converter
+-->
+</head>
+<body>
+<script>
+var reader = new FileReader(),
+rImg = /^(?:image\/bmp|image\/cis\-cod|image\/gif|image\/ief|image\/jpeg|image\/jpeg|image\/jpeg|image\/pipeg|image\/png|image\/svg\+xml|image\/tiff|image\/x\-cmu\-raster|image\/x\-cmx|image\/x\-icon|image\/x\-portable\-anymap|image\/x\-portable\-bitmap|image\/x\-portable\-graymap|image\/x\-portable\-pixmap|image\/x\-rgb|image\/x\-xbitmap|image\/x\-xpixmap|image\/x\-xwindowdump)$/i,
+file;
+reader.onload = function (e) {
+	document.getElementById('preview').src = e.target.result;
+	document.getElementById('base64').innerText = e.target.result;
+	};
+
+function convert() {
+	file = document.getElementById("upload").files[0];
+	if (!rImg.test(file.type)) {
+		alert("You must select a valid image file!");
+		return;
+		}
+	console.log(file.type + ' :: ' + file.name + ' :: ' + file.size)
+	reader.readAsDataURL(file);
+	}
+</script>
+
+<h4>Image to Base64 converter</h4>
+<img id="preview" style="width: 250px; height: 250px;" src="" alt="Image preview" />
+<input id="upload" type="file" onchange="convert();" style=""/>
+<h4>Results</h4>
+<textarea id="base64" style="width: 100%; height: 200px;" ></textarea>
+</body>
+</html>

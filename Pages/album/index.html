@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 可爱的佳妮 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>You are beautiful!</title>
+<style>
+li{
+	list-style:none;
+}
+body{
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	background:#333;
+}
+.coveflow{
+	width:1px;
+	height:1px;
+	position:absolute;
+	top:50%;
+	left:50%;
+}
+.coveflow *{
+	margin:0;
+	padding:0;
+	list-style:none;
+	top:-200px; 
+}
+.coveflow div{
+	width:480px;
+	height:360px;
+	position:absolute;
+	-webkit-transition: -webkit-transform  300ms ease-out; 
+}
+.coveflow ul{
+	-webkit-perspective: 480;
+	-webkit-transform-style:flat;
+}
+.coveflow li{
+	display:block;
+	width:480px;
+	-webkit-transition: -webkit-transform 300ms ease-out; 
+	-webkit-box-reflect: below 0 -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(60%, transparent), to(rgba(255,255,255,.2)));
+}
+.coveflow .turnLeft,.coveflow .turnRight{
+	-webkit-transform: scale(.6);
+	
+}
+.coveflow .turnLeft li{
+	-webkit-transform: rotateY(40deg);
+}
+
+.coveflow .turnRight li{
+	-webkit-transform: rotateY(-40deg);
+}
+.coveflow .flat{
+	-webkit-transform: scale(1);
+}
+.coveflow .flat li{
+	-webkit-transform: rotateY( 0deg );
+}
+</style>
+</head>
+
+<body>
+<div id="coveflow" class="coveflow">
+    <div style="-webkit-animation: 500ms ease-out; z-index: 1; -webkit-transform: translateX(-740px) scale(0.6);" class="turnLeft">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/1.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 2; -webkit-transform: translateX(-640px) scale(0.6);" class="turnLeft">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/2.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 3; -webkit-transform: translateX(-540px) scale(0.6);" class="turnLeft">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/3.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 4; -webkit-transform: translateX(-440px) scale(0.6);" class="turnLeft">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/4.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 9; -webkit-transform: translateX(-240px) scale(1);" class="flat">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/5.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 4; -webkit-transform: translateX(-40px) scale(0.6);" class="turnRight">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/6.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 3; -webkit-transform: translateX(60px) scale(0.6);" class="turnRight">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/7.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 2; -webkit-transform: translateX(160px) scale(0.6);" class="turnRight">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/8.jpg">
+            </li>
+        </ul>
+    </div>
+    <div style="-webkit-animation: 500ms ease-out; z-index: 1; -webkit-transform: translateX(260px) scale(0.6);" class="turnRight">
+        <ul>
+            <li style="-webkit-animation: 500ms ease-out;">
+                <img src="./index_files/9.jpg">
+            </li>
+        </ul>
+    </div>
+    
+</div>
+
+<script src="./index_files/jquery.js"></script>
+<script src="./index_files/coveflow.js"></script>
+<script>
+var as; //将index的值给as （as=index）
+$('#coveflow').coveflow({onIndexChanged:function(index){as=index}});
+window.addEventListener("mousewheel",function(event){var jb=as;
+as=-1;
+if (event.wheelDelta >= 120&&jb>0)    
+document.getElementsByTagName("li")[jb-1].click();
+else if (event.wheelDelta <= -120&&jb<10)  
+document.getElementsByTagName("li")[jb+1].click();
+as=jb;
+},false);
+</script>
+
+
+</body></html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- 全新的foobar2000 -->
+<html class="js browser-mobile-index chrome win8" lang="en" id="win"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if lt IE 10]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'> <a href="http://ichrome.duapp.com/"><img src="http://www.theie6countdown.cn/img/banner/upgrade.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+    <script src="./cb=gapi.loaded_0" async=""></script><script src="./cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./ga.js"></script><script>
+    </script>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <meta content="Google Chrome for Mobile lets you bring your personalized Chrome experience with you anywhere you go." name="description">
+    <title>
+      豆瓣.FM 音乐播放器
+    </title>
+    <link href="https://plus.google.com/100585555255542998765" rel="publisher">
+    <link href="http://lovejiani.duapp.com/douban.ico" rel="icon" type="image/ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin" rel="stylesheet">
+    <link href="./chrome.min.css" rel="stylesheet">
+    <script src="./autotrack.js" gapi_processed="true">
+</script>
+    <script>
+new gweb.analytics.AutoTrack({
+          profile: 'UA-26908291-1'
+        });
+    </script>
+  <script>(function (messageID){
+			var frameID=Math.random();
+			var frames={
+				top:window.top,
+			};
+
+			window.addEventListener('message',function(e){
+				var data=e.data;
+				if( !data || !data.messageID || data.messageID != messageID )return;//通信ID认证
+				var source=e.source;
+				if(source===window){//来自contentscript,发送出去,或者干嘛。
+					if(data.to){
+						data.from=frameID;
+						frames[data.to].postMessage(data,'*');
+					}else{
+						switch(data.command){
+							case 'getIframeObject':{
+								var frameWindow=frames[data.windowId];
+								var iframes=document.getElementsByTagName('iframe');
+								var iframe;
+								var targetIframe;
+								for(var i=iframes.length-1 ; i>=0 ; i--){
+									iframe=iframes[i];
+									if(iframe.contentWindow===frameWindow){
+										targetIframe=iframe;
+										break;
+									};
+								};
+								var cusEvent=document.createEvent('CustomEvent');
+								cusEvent.initCustomEvent('pv-getIframeObject',false,false,targetIframe);
+								document.dispatchEvent(cusEvent);
+							}break;
+						};
+					};
+
+				}else{//来自别的窗口的，contentscript可以直接接收，这里保存下来自的窗口的引用
+					frames[data.from]=source;
+				};
+			},true)
+		})("pv-0.5106795670312598")</script><link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/css/searchhelper.css"><style>@-moz-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-webkit-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}embed,object{animation-duration:.001s;-ms-animation-duration:.001s;-moz-animation-duration:.001s;-webkit-animation-duration:.001s;-o-animation-duration:.001s;animation-name:nodeInserted;-ms-animation-name:nodeInserted;-moz-animation-name:nodeInserted;-webkit-animation-name:nodeInserted;-o-animation-name:nodeInserted;}</style><link rel="stylesheet" type="text/css" href="chrome-extension://lfjamigppmepikjlacjdpgjaiojdjhoj/css/menu.css"><style type="text/css">					#pv-float-bar-container {						position: absolute;						z-index:999999998;						padding: 5px;						margin: 0;						border: none;						opacity: 0.6;						line-height: 0;						-webkit-transition: opacity 0.2s ease-in-out;						transition: opacity 0.2s ease-in-out;						display:none;					}					#pv-float-bar-container:hover {						opacity: 1;					}					.pv-float-bar-button {						vertical-align:middle;						cursor: pointer;						width: 18px;						height: 18px;						padding: 0;						margin:0;						border: none;						display: inline-block;						position: relative;						box-shadow: 1px 0 3px 0px rgba(0,0,0,0.9);						background: transparent center no-repeat;						background-size:100% 100%;						background-origin: content-box;						-webkit-transition: margin-right 0.15s ease-in-out ,  width 0.15s ease-in-out ,  height 0.15s ease-in-out ;						transition: margin-right 0.15s ease-in-out ,  width 0.15s ease-in-out ,  height 0.15s ease-in-out ;					}					.pv-float-bar-button:not(:last-child){						margin-right: -14px;					}					.pv-float-bar-button:first-child {						z-index: 4;					}					.pv-float-bar-button:nth-child(2) {						z-index: 3;					}					.pv-float-bar-button:nth-child(3) {						z-index: 2;					}					.pv-float-bar-button:last-child {						z-index: 1;					}					#pv-float-bar-container:hover > .pv-float-bar-button {						width: 24px;						height: 24px;					}					#pv-float-bar-container:hover > .pv-float-bar-button:not(:last-child) {						margin-right: 4px;					}					.pv-float-bar-button-actual {						background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFQkE5RjA0RDk2MzhFMjExQTU0REJGNDRCQTFCOUNERSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozOEE0N0FDMTNENjgxMUUyOUQ4REU1MDlFRDYwNTkzOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozOEE0N0FDMDNENjgxMUUyOUQ4REU1MDlFRDYwNTkzOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkVCQTlGMDREOTYzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkVCQTlGMDREOTYzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+nuhUUAAAAVFJREFUeNq01bGqglAYB/BuiQ0hDU26aTgYtES74As4iG/gQziIbyAStgu2NhQtvUGk6Au4OTg4qCjk5ulc4l6sa/eCx/sfDpzjxw/9OB9+AAAGvaQXCCLDQU/5N2i1Wl0uF1EUkXq0WCyKogiCoAvShE6nE9wahoHabEEQ4JrnOWqPqqqCK8dxqPdot9vBbVmWs9kMqUcMw2RZBk8cx0GCHt91PB7TNNV1HQn6M9PpFBUaj8f7/R7We55HUVR3yLIs8JXr9ToajbpA6/W6rmvQiKIoXaDz+QyeE0URhmHt0Hw+930/DMPlctlU4Ay+vM4jsiy3QARBQOJRkSQJTdPf0GazAW05HA4tkGmazSLXdXEc/xyi4TCO41bodrtNJpMniCRJePpSp2kafMTzPHgfSZKeIFVVfxbBGWZZdrvd/gLZtt3xZr8bEayvH8ldgAEAjySkPffpTOwAAAAASUVORK5CYII=");					}					.pv-float-bar-button-gallery {						background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTEwMDAwRUIzOEEwMTFFMjhEOEM5NkVGODMwQkUyRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTEwMDAwRUMzOEEwMTFFMjhEOEM5NkVGODMwQkUyRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxMTAwMDBFOTM4QTAxMUUyOEQ4Qzk2RUY4MzBCRTJGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxMTAwMDBFQTM4QTAxMUUyOEQ4Qzk2RUY4MzBCRTJGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvbSbv8AAAD8SURBVHjarJVBDkQwFIZ10q0DWNq6hEOIu1iIOwh7V3AC1hZcwC1I2HnTmWbedMqUVv+ElPZ9/veirwQAHCuyAmIQaoYjhEhvqGJOKwlqliZfKX6bnnq+6IveKb/oi16s5amvh2NJKtA0TcMwWAC5rtu2rQUQk+d5eltkf+eDeZ4vhqscBUHQNE2WZXcdaYU/tMpRFAW81XXdX2SSJKeOtm2Dj+SEcMTFfOGivu/HcRRLBoLiOD4AIR59sZ+IB/i+z2fzPBdBdV2rQOhrWRZ8TNM0DEPYKYqiY5DkC7Wua1mWe1BVVQgir+t3rxu03W/PNushcmOzcpA8BRgAZvU/uPa6ZfkAAAAASUVORK5CYII=");					}					.pv-float-bar-button-current {						background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MkFGMjYxQkQzOEEwMTFFMkJBMzdENzI0QkVEMjM3NjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MkFGMjYxQkUzOEEwMTFFMkJBMzdENzI0QkVEMjM3NjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyQUYyNjFCQjM4QTAxMUUyQkEzN0Q3MjRCRUQyMzc2OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyQUYyNjFCQzM4QTAxMUUyQkEzN0Q3MjRCRUQyMzc2OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkXfwy0AAADoSURBVHjaYvpPJcDCwMDAyMjIQBkAGsTEQCVANYNY0FxIkmbkMGHBI0cwXGjiNewGffr06dy5c1QwiJeXd//+/dSJNUlJSZLTEiYbyPj8+TNJGrG7SEtLa9++fXV1dZS6iAyNxEb/5MmTIZnz5MmTFLno379/8IxOgovOnj17+/Zt5CBDTvGhoaFEuQiYiCA2KyoqQsQnTpyIXPRs2LABi0Y0PjD5fPv2Da6npqbG3t4esxgLDg4mYFBFRQWyhu/fv0+ZMgXToPnz56NpZARhmP/JLkagRS0ZZQgNS0iqFrWkBg1WABBgAMViMFcYqRWbAAAAAElFTkSuQmCC");					}					.pv-float-bar-button-magnifier {						background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFOUE5RjA0RDk2MzhFMjExQTU0REJGNDRCQTFCOUNERSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2OTVBMUFDOTM4QTMxMUUyQjU3OEY5MDVFQzA5NDg3NiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2OTVBMUFDODM4QTMxMUUyQjU3OEY5MDVFQzA5NDg3NiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU4REEyMTVBQTMzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU5QTlGMDREOTYzOEUyMTFBNTREQkY0NEJBMUI5Q0RFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+c9dtRgAAAdpJREFUeNqsVS3LwlAUdjIFgx9hCyJDRPEfKIqMBe2GMbCYzDMb/BN+NAWjRottRsMQ1gWLwWawqEFh78M72a53H4LshnF37nOenfOcc+4Y0zQjoaxQiEASpUw8z/d6veVyeTwen88nntjDAnswFwMyhmGsl2azqarq5XLRNG2/359Op3w+X6lUWq0Wx3GTyWS73fqmZacGFvi3221PKOw4BcaP6B0RIp/NZovFAuH4BS+KYrfbzeVy6XTayeg/GyciqDCfz7FpNBoBQgADpLtQjthQAZFTbqvVirIAA6TnN95EUBTqkge1Wi2TyVBoYIAMqhoqnUgkXq8XUtvtdogFZXo8HrfbDaBOp2OhWZaFMRaLORpTGqFfisUiqRE2m82G+iwwQAZp5BlzPB6nLG4FaI3cKhqG0e/3BUEgjZ41+QgPfbRer9F1AeXHKTDkrJCp0Z09GAz8WJDU4XAAXtd1NxFrQ605Go/HpVLJc9ZSqVS5XAamWq1+v0au16s1/efzGd1gT3+9XjeJpSiKb2okbzKZtBwKhYJlH41GJBHE+k6UzWbv97vtMxwOJUkyXUuW5S9E0Jt0QCtPp1M3Ea4KkujjYvvh5rVHhPU8+GFFIyEtNqwfyZ8AAwDsuJgtGILBsQAAAABJRU5ErkJggg==");					}				</style><style type="text/css"></style></head>
+  <body class="" id="grid">
+    <div class="compact" id="header">
+      <div class="g-section g-tpl-160 g-split">
+        <div class="g-unit g-first" id="header-logo">
+          <a href="http://douban.fm/"><img alt="Chrome" data-g-event="nav-logo" data-g-label="browser-mobile-index-home" id="logo" src="./chrome_logo_2x.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="browser-mobile" id="main">
+      <div class="compact">
+        <div class="g-section g-tpl-nest g-split marquee-side marquee-divider" id="marquee">
+          <div class="marquee-copy g-unit g-first g-col-5">
+            <div class="g-content">
+              <div class="g-content-inner">
+                <h1 class="wrap">豆瓣.FM </h1>
+                <p>我们为 Foobar 设计了全新的UI</p>
+                <p>现在的豆瓣FM 更简洁</p>
+                <p>歌曲音质更清晰，</p>
+<p>简单、聪明，你将更加自由的享受音乐。</p>
+                <div class="badges">
+                  <div class="play-badge">
+                    <a data-g-event="cta" data-g-label="mobile-android-download" href="http://lovejiani.duapp.com/FB2KDouBanFM%20v1.1.18Final.zip"><img src="./apple_appstore.png" alt="" height="30"></a>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="marquee-image g-unit g-col-7">
+		    <embed src="http://lovejiani.duapp.com/fmplayer.swf" quality="high" width="510" height="245" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash">
+          </div>
+        </div>
+        <div class="speed g-section g-tpl-50-50 feature"></div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="g-section g-tpl-50-50 g-split" id="sub-footer">
+        <div class="g-unit g-first">
+          <p>
+            Copyleft 2013.  <a data-g-event="nav-subfooter" data-g-label="privacy" href="http://weibo.com/asionwxk">Asion-Wu</a> <a data-g-event="nav-subfooter" data-g-label="help" href="http://weibo.com/319880777">雨宮汐</a>
+ <a data-g-event="nav-subfooter" data-g-label="help" href="http://lovejiani.duapp.com/blog/?p=66">帮助</a>
+         </p>
+          <p id="cdslink" style="display: none;">
+            Looking for Chrome Systems? Chrome Systems is now <a data-g-label="cds-outbout-referral" href="http://www.chromedata.com/">Chrome Data Solutions</a>.
+          </p><script>
+if (!document.location.hash.match(/.*cds*/)) {
+          document.getElementById('cdslink').style.display = 'none';
+        };
+          </script>
+        </div>
+      </div>
+    </div><script src="./chrome.min.js">
+</script><script>
+var chrmMenuBar = new chrm.ui.MenuBar();
+      chrmMenuBar.decorate('nav');
+      var chrmLogo = new chrm.ui.Logo('logo');
+      
+      var chrmscroll = new chrm.ui.SmoothScroll('scroll');
+      chrmscroll.init();
+
+  
+  
+  window.___gcfg = { lang: 'en' };
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+    </script>
+  
+<div id="__nightingale_view_cover" style="width: 100%; height: 100%; -webkit-transition: -webkit-transform 10s ease-in-out; position: fixed !important; left: 0px !important; bottom: 0px !important; overflow: hidden !important; background-color: rgb(0, 0, 0) !important; pointer-events: none !important; z-index: 2147483647; opacity: 0; background-position: initial initial !important; background-repeat: initial initial !important;"></div><span id="pv-float-bar-container" style="top: 331.4666748046875px; left: 238px; display: none;"><span class="pv-float-bar-button pv-float-bar-button-actual" title="查看原始"></span><span class="pv-float-bar-button pv-float-bar-button-current" title="查看当前"></span><span class="pv-float-bar-button pv-float-bar-button-magnifier" title="放大镜"></span><span class="pv-float-bar-button pv-float-bar-button-gallery" title="查看库"></span></span></body></html>

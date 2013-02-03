@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://lovejiani.duapp.com/earthdl_files/license.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Google - 1. 软件的使用；限制</title>
+<link href="file:///C:/Users/KawaiiUshio/Desktop/earthdl_files/gcs.css" rel="stylesheet" type="text/css">
+<script>(function (){
+					var cusEvent=document.createEvent('CustomEvent');
+					cusEvent.initCustomEvent('picViewer-return-unsafeWindow',false,false,window);
+					document.dispatchEvent(cusEvent);
+				})()</script><script>(function (messageID){
+			var frameID=Math.random();
+			var frames={
+				top:window.top,
+			};
+
+			window.addEventListener('message',function(e){
+				var data=e.data;
+				if( !data || !data.messageID || data.messageID != messageID )return;//通信ID认证
+				var source=e.source;
+				if(source===window){//来自contentscript,发送出去,或者干嘛。
+					if(data.to){
+						data.from=frameID;
+						frames[data.to].postMessage(data,'*');
+					}else{
+						switch(data.command){
+							case 'getIframeObject':{
+								var frameWindow=frames[data.windowId];
+								var iframes=document.getElementsByTagName('iframe');
+								var iframe;
+								var targetIframe;
+								for(var i=iframes.length-1 ; i>=0 ; i--){
+									iframe=iframes[i];
+									if(iframe.contentWindow===frameWindow){
+										targetIframe=iframe;
+										break;
+									};
+								};
+								var cusEvent=document.createEvent('CustomEvent');
+								cusEvent.initCustomEvent('pv-getIframeObject',false,false,targetIframe);
+								document.dispatchEvent(cusEvent);
+							}break;
+						};
+					};
+
+				}else{//来自别的窗口的，contentscript可以直接接收，这里保存下来自的窗口的引用
+					frames[data.from]=source;
+				};
+			},true)
+		})("pv-0.5106795670312598")</script><style>@-moz-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-webkit-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}embed,object{animation-duration:.001s;-ms-animation-duration:.001s;-moz-animation-duration:.001s;-webkit-animation-duration:.001s;-o-animation-duration:.001s;animation-name:nodeInserted;-ms-animation-name:nodeInserted;-moz-animation-name:nodeInserted;-webkit-animation-name:nodeInserted;-o-animation-name:nodeInserted;}</style><link rel="stylesheet" type="text/css" href="chrome-extension://lfjamigppmepikjlacjdpgjaiojdjhoj/css/menu.css"><script>(function (){
+					var cusEvent=document.createEvent('CustomEvent');
+					cusEvent.initCustomEvent('picViewer-return-unsafeWindow',false,false,window);
+					document.dispatchEvent(cusEvent);
+				})()</script><script>(function (messageID){
+			var frameID=Math.random();
+			var frames={
+				top:window.top,
+			};
+
+			window.addEventListener('message',function(e){
+				var data=e.data;
+				if( !data || !data.messageID || data.messageID != messageID )return;//通信ID认证
+				var source=e.source;
+				if(source===window){//来自contentscript,发送出去,或者干嘛。
+					if(data.to){
+						data.from=frameID;
+						frames[data.to].postMessage(data,'*');
+					}else{
+						switch(data.command){
+							case 'getIframeObject':{
+								var frameWindow=frames[data.windowId];
+								var iframes=document.getElementsByTagName('iframe');
+								var iframe;
+								var targetIframe;
+								for(var i=iframes.length-1 ; i>=0 ; i--){
+									iframe=iframes[i];
+									if(iframe.contentWindow===frameWindow){
+										targetIframe=iframe;
+										break;
+									};
+								};
+								var cusEvent=document.createEvent('CustomEvent');
+								cusEvent.initCustomEvent('pv-getIframeObject',false,false,targetIframe);
+								document.dispatchEvent(cusEvent);
+							}break;
+						};
+					};
+
+				}else{//来自别的窗口的，contentscript可以直接接收，这里保存下来自的窗口的引用
+					frames[data.from]=source;
+				};
+			},true)
+		})("pv-0.5106795670312598")</script><style>@-moz-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-webkit-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}embed,object{animation-duration:.001s;-ms-animation-duration:.001s;-moz-animation-duration:.001s;-webkit-animation-duration:.001s;-o-animation-duration:.001s;animation-name:nodeInserted;-ms-animation-name:nodeInserted;-moz-animation-name:nodeInserted;-webkit-animation-name:nodeInserted;-o-animation-name:nodeInserted;}</style><link rel="stylesheet" type="text/css" href="chrome-extension://lfjamigppmepikjlacjdpgjaiojdjhoj/css/menu.css"></head>
+<body>
+<div class="g-doc earth">
+<p>感谢您使用 Google 地球！下载、安装或使用本软件或其中任何部分（“Google 软件”）即表示您同意遵守以下服务条款和“法律声明”页面（位于 http://www.google.com/intl/en_us/help/legalnotices_maps.html）中所述条款（统称为“服务条款”）的规定。Google 软件及其任何部分在本协议中都称为“软件”。本网站为Google Earth的镜像站点 修改自雨宮汐</p>
+<h3>1. 软件的使用；限制</h3>
+<p>软件的使用。对于个人最终用户，仅可依照此处的服务条款和软件文档将本软件用于个人非商业用途。对于企业实体最终用户或政府实体最终用户，您和您的员工可依照此处的服务条款和软件文档（个人最终用户、企业最终用户和政府最终用户在本协议中统称为“您”）在内部使用本软件。限制。除非您已经得到 Google 的特别许可，否则您不得将本软件与任何产品、系统或应用程序搭配使用，包括安装在、连接到或在交通工具中使用的以下产品、系统或应用程序：</p>
+<p>(a) 实时路线导航（包括但不限于按转弯路口提供的分步路线导航和通过使用传感器而启用的其他路线导航）；</p>
+<p>(b) 任何用于自动或自主控制交通工具行为的系统或功能；</p>
+<p>(c) 调度、车队管理或类似应用程序。您不得使用本软件使自己或其他任何人能够对纬度和经度数字坐标进行批量下载和收录。您不得使用本软件进行批量打印或批量下载图像、数据或其他内容。</p>
+<h3>2. 隐私政策</h3>
+<p>您必须同意“Google 隐私政策”条款（请参阅 http://www.google.com/privacy.html），才能下载和使用本软件。此外，隐私政策条款会随时更新，恕不另行通知。</p>
+<h3>3. 所有权</h3>
+<p>a. Google。您承认</p>
+<p>(a) 本软件包含受适用的知识产权法和其他法律保护的所有权和机密信息；</p>
+<p>(b) Google 拥有本软件以及通过本软件提供的或与本软件一起提供的软件的所有权利、所有权和权益，包括但不限于类似软件的所有知识产权。“知识产权”是指根据专利法、版权法、商业秘密保护法、商标法、不公平竞争法一直存在的任何及所有权利；任何及所有其他所有权；以及根据本协议规定现在或将要在世界范围内生效的任何及所有应用程序、续订的程序、扩展程序和恢复程序。您同意不会也不允许任何第三方 (i) 复制、出售、许可、分发、传播、修改、改编、翻译或根据本软件创作衍生作品、反编译、反向工程、反汇编或尝试获取本软件的源代码（除非事先获得允许）；(ii) 采取任何措施绕过或破解本软件中的任何功能（包括但不限于数字权利管理功能）所提供、部署或强制执行的安全或内容使用规则；(iii) 使用本软件以违反法律或侵犯第三方权利的方式访问、复制、传播、转换任何内容的代码或转发任何内容；(iv) 删除、隐藏或更改本软件附属的、包含的，或与本软件一起访问或通过本软件访问的 Google 版权声明、商标或其他所有权声明。本软件向您提供的任何内容，包括但不限于摄影图像和地图数据（以下统称为“内容”），均受到 Google、其第三方许可人和合作伙伴，以及向 Google 提供这些内容的其他各方所拥有的知识产权的保护。除非事先得到 Google 或此内容的所有者在单独的协议中授予的许可，否则您不得也不能允许他人复制、分发、显示、修改或使用通过本软件向您提供的内容。Google 及其许可人对该信息的准确性或完整性不作任何陈述或担保。</p>
+<p>b. 第三方。本软件中地图内容的数据是根据包括 Tele Atlas North America, Inc.（“TANA”，其提供的数据简称“TANA 数据”）在内的 Google 许可人的许可证而提供的，这些数据受到 TANA 和其他此类许可人拥有的或通过许可获得的知识产权的约束。您同意不对此材料进行未经授权的复制或披露，并同意为此类行为负责。您不得出于任何商业目的而使用或分发地图信息。使用本软件即表示您同意 TANA 成为本协议的第三方受益人。您对 TANA 数据的使用受到“法律声明”页面中附加限制的制约。</p>
+<h3>4. 自动更新</h3>
+<p>本软件可能会不时与 Google 服务器进行通讯，以检查是否有本软件的可用更新，例如漏洞补丁、修补程序、增强功能、缺少的插件和新版本（统称“更新”）。 安装本软件即表示您同意自动请求和接收更新。</p>
+<h3>5. 美国政府的限制权利</h3>
+<p>如果本软件由美国政府（或其代表）使用或访问，则这样的使用或访问必须遵守以下规定。本软件和任何相关文档在适用的民用和军用联邦采购法及其任何附录中分别被视为“商业计算机软件”和“商业计算机软件文档”。如果本软件的用户是美国政府的机构、部门、员工或其他实体，则对本软件（包括技术数据或手册）的使用、复制、翻印、发行、修改、披露或转让均受到此服务条款中包含的条款、细则和约定的约束。此外，根据联邦采购法第 12.212 条（适用于民用机构）和国防部联邦采购法附录第 227.7202 条（适用于军事机构），对本软件的使用还受到其中服务条款的约束。</p>
+<h3>6. 出口限制</h3>
+<p>本软件受到美国出口管制相关法规的约束。下载本软件即表示您同意遵守所有美国出口管制规定（包括“出口管理规章”，即“EAR”）、制裁计划（包括由美国财政部外国资产管制办公室（“OFAC”）颁布并管理的制裁计划），以及所有其他适用的国际贸易规定。您同意在没有得到所需批准的情况下不会在禁止的目的地（包括古巴、伊朗、朝鲜、苏丹和叙利亚）代表禁止的实体或个人、以违反上述出口规定和制裁计划的其他方式下载或使用本软件，并将其用于任何禁止的最终目的。下载或使用本软件即表示并保证您不是禁止的最终用户，并且表示并保证您不会将本软件用于此处规定中禁止的最终用途。</p>
+<h3>7. 遵守法律和 GOOGLE 政策</h3>
+<p>您同意遵守有关下载、安装和/或使用本软件的当地所有法律法规。您同意遵守 Google 按其意愿不时提供的任何适用的政策或准则。同意使用本软件即表示您不会进行以下操作（仅做示例，不限于此）：</p>
+<ul>
+<li>诽谤、辱骂、骚扰、恐吓、威胁或以其他方式侵犯他人的合法权利（例如隐私权和知情权）；</li>
+<li>上传、张贴、以电子邮件发送、传输或以其他方式提供任何不适当、诽谤、侵权、淫秽或非法内容；</li>
+<li>上传、张贴、以电子邮件发送、传输或以其他方式提供任何侵犯专利、商标、版权、商业秘密或任何方其他所有权的内容，除非您是这些权利的所有者，或得到所有者许可允许您张贴此类内容；</li>
+<li>下载他人张贴、但您知道或理应知道发布方式违法的文件；</li>
+<li>冒充他人或实体，或者伪造、删除任何著作权归属标志、法律或其他专有声明或所有权指示、软件、内容或其他材料的来源或原始资料的标记；</li>
+<li>限制或禁止任何其他用户使用或体验 Google 服务；</li>
+<li>将 Google 服务用于任何非法或未经授权的用途；</li>
+<li>删除 Google 服务中包含的任何版权、商标或其他所有权声明；</li>
+<li>干扰或破坏 Google 服务或与 Google 服务相关的服务器或网络，或者违反与 Google 服务相关的网络的任何要求、步骤、政策或规章。</li>
+<li>使用任何网络机器人、网络蜘蛛、站点搜索/检索应用程序或其他设备检索 Google 服务的任何部分或对其编制索引，或收集用户信息用于任何未经授权的用途；</li>
+<li>提交错误表达或暗示此类内容受 Google 赞助或支持的内容；</li>
+<li>用自动方式或以虚假、欺骗性的借口创建用户帐户；</li>
+<li>宣传或提供有关非法活动的指导信息或鼓动对任何群体或个人进行人身伤害或诽谤；或</li>
+<li>传输任何病毒、蠕虫、缺陷、特洛伊木马或任何具有破坏性的内容。</li>
+</ul>
+<h3>8. 终止</h3>
+<p>您可以随时通过永久删除本软件来终止此处所有的服务条款。如果您未遵守这些服务条款中的任何规定，您的权利会立即自动终止，Google 不再另行通知。在这种情况下，您必须立即删除本软件及所有内容。在法律允许的最大范围内，Google 保留由于任何原因随时终止本协议以及终止您对本软件的使用的权利。</p>
+<h3>9. 条款效力独立</h3>
+<p>第 3、5、6、9、10、11、12、13、14、15 和 16 部分中的规定在本协议条款终止或到期后仍然有效。</p>
+<h3>10. 责任免除</h3>
+<p>您同意对于由于使用本软件或违反此处服务条款引起的或与之相关的任何索赔、起诉或诉讼（包括由索赔、损失、损害、起诉、审判、诉讼费或律师费而引起的各种责任和费用），您应保护 Google 及其子公司、附属公司、管理人员、代理和员工，保证他们免于承担责任。 如果出现类似情况，Google 会向您提供书面通知，告知您我们遭到了类似索赔、起诉或诉讼。</p>
+<h3>11. 担保事项免责声明</h3>
+<p>您明确了解并同意：</p>
+<p>a) 使用本软件的所有风险由用户承担。本软件按“原样”提供，不包含任何担保。在法律允许的最大范围内，GOOGLE 及其许可人明确拒绝任何明示或暗示的担保和条件，包括但不限于针对适销性、用于特殊目的的适用性以及非侵权的任何暗示的担保和条件。</p>
+<p>b) GOOGLE 及其许可人不保证 (I) 本软件符合您的要求；(II) 本软件没有任何错误或缺陷；(III) 本软件的安全性、可靠性、及时性或性能；(IV) 本软件中的任何错误都会得到纠正。</p>
+<p>c) 您有权自行决定通过本软件下载或获得哪些内容或材料，但所有风险由您承担，并且对于下载此类内容或材料引起的对计算机系统或其他设备的损害或数据丢失，也由您承担全部责任。</p>
+<p>d) 不得将本软件用于运行核设施、生命维持系统、紧急通信、飞机导航或通信系统、空中交通管制系统或其他任何可能因软件故障而导致死亡、人身伤害或严重身体伤害或环境危害的活动。</p>
+<p>e) 您从 GOOGLE 或第三方处或者通过本软件获得的任何建议或信息（无论口头还是书面），都不可视为本协议条款明确表述以外的任何担保。</p>
+<h3>12. 责任限制</h3>
+<p>您明确了解并同意 GOOGLE 及其许可人对任何直接的、间接的、偶发的、特殊的、继发的或惩戒性赔偿概不负责，包括但不限于由以下行为引起的收益损失、商誉损失、使用损失、数据损失或其他无形损失的赔偿（即使 GOOGLE 或其许可人事先已收到可能发生此类赔偿的通知）：</p>
+<p>(I) 使用或无法使用本软件来访问数据或内容；</p>
+<p>(II) 购买替代商品或服务的费用；</p>
+<p>(III) 未经授权访问或更改传输内容或数据；(V) 与本软件相关的其他任何事项。</p>
+<p>尽管没有达到有限补救的基本目的，但在法律允许的最大范围内，上述限制仍然适用。任何情况下，Google 或任何第三方（随附本软件一起提供或通过本软件向您提供软件或内容）对由于您使用或误用本软件或者此类第三方的软件或内容而给您或任何用户造成的损害概不负责。此类责任限制适用于阻止得到任何直接的、间接的、偶发的、继发的、特殊的和惩戒性赔偿，无论此类索赔是基于担保、合同、侵权行为（包括过失）还是基于其他行为（即使 Google 和/或第三方软件或内容提供商事先已收到可能发生此类赔偿的通知）。无论这些赔偿是由本软件或者与本软件一起或通过本软件提供的所有第三方软件或内容的使用、误用、不能使用或依赖所引起，还是由本软件或者与本软件一起或通过本软件提供的任何第三方软件或内容的中断、暂停或终止所引起（包括由第三方引发的赔偿），此类责任限制都适用。尽管没有达到有限补救的基本目的，但在法律允许的最大范围内，上述限制仍然适用。</p>
+<h3>13. 例外与限制</h3>
+<p>本协议不排除或限制任何合法的条件、担保、权利或责任。某些国家/地区或其他司法辖区不允许排除暗示的担保，因此上述担保排除对您可能不适用。此外，根据国家/地区和司法辖区的不同，您可能还具有其他权利。</p>
+<h3>14. 无第三方受益人</h3>
+<p>您同意，除非在服务条款中有明确规定，否则本协议条款不具有第三方受益人。</p>
+<h3>15. GOOGLE 服务与第三方产品和服务</h3>
+<p>本软件的某些功能根据设计需要与 Google 搜索和其他服务搭配使用。因此，每次您使用本软件时即表示您同意遵守 http://www.google.com/accounts/TOS 上的 Google 服务条款。</p>
+<h3>16. 其他规定</h3>
+<p>a) 法律和诉讼地的选择。此服务条款受到加利福尼亚州法律的约束，并根据加利福尼亚州法律进行解释，加利福尼亚州、您所在州或所居住国家/地区的法律冲突条款无效。如果由于任何原因，具有相应司法管辖权的法院发现本协议条款中的任何规定或任何部分无法执行，则该条款的其他部分将继续保持完全的法律效力。</p>
+<p>b) 条款的自动放弃与中止。Google 未能行使或执行这些条款中的任何权利或规定不会导致此类权利或规定的失效。如果具有相应司法管辖权的法院发现本协议条款中的任何规定无效，双方都同意：法院应努力使双方想要通过该规定传达的意图生效，并且条款的其他规定将继续保持完全的法律效力。</p>
+<p>c)·限制性法令。您同意，（不考虑任何有相反规定的法令/法律）由于使用本软件而引发的任何索赔或控诉，以及与本软件使用或服务条款相关的任何索赔或控诉，都应在引发类似索赔或控诉的事件发生后的一 (1) 年内提请诉讼，否则将视为永久放弃诉讼权。</p>
+<p>d) 本协议条款构成了双方之间关于本协议主题的完整协议，并取代所有与此主题相关的、先前或同时期达成的、书面或口头的谅解备忘录或协议。如要放弃本协议条款中的任何规定，必须出具由 Google 和/或随附本软件一起或通过本软件提供软件的第三方签署的书面协议。</p>
+</div>
+
+
+</body><style type="text/css"></style></html>

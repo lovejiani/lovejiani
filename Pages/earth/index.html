@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/KawaiiUshio/Desktop/1/earth.html -->
+<html class="google-js-js-js-js-js" lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script type="text/javascript" async="" src="./index_files/ga.js"></script><script type="text/javascript" async="" src="./index_files/ga(1).js"></script><script type="text/javascript" async="" src="file:///C:/Users/KawaiiUshio/Desktop/1/earth_files/ga(1).js"></script><script type="text/javascript" async="" src="file:///C:/Users/KawaiiUshio/Desktop/earth_files/ga(1).js"></script><script type="text/javascript" async="" src="file:///C:/Users/KawaiiUshio/Desktop/earth_files/ga(1).js"></script><script>
+(function(H){H.className=H.className.replace(/\bgoogle\b/,'google-js')})(document.documentElement)
+    </script>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <meta content="Google 地球可带您飞往地球上的任何地方，您可以在上面查看卫星图像、地图、各种地形地貌和 3D 建筑，包括外太空的银河系以及大洋峡谷。您可以尽情浏览丰富的地理资料，保存您游览过的地点并与他人分享。" name="description">
+    <title>
+      Google 地球
+    </title>
+    <script src="./index_files/google.js">
+</script>
+    <script>
+var earth=earth||{};earth.at=new gweb.analytics.AutoTrack({profile:"UA-18031-1"});
+    </script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=zh-CN" rel="stylesheet">
+    <link href="http://www.google.com/css/maia.css" rel="stylesheet">
+    <link href="http://www.google.com/earth/css/main_nerd.css" rel="stylesheet">
+  <script>(function (){
+					var cusEvent=document.createEvent('CustomEvent');
+					cusEvent.initCustomEvent('picViewer-return-unsafeWindow',false,false,window);
+					document.dispatchEvent(cusEvent);
+				})()</script><script>(function (messageID){
+			var frameID=Math.random();
+			var frames={
+				top:window.top,
+			};
+
+			window.addEventListener('message',function(e){
+				var data=e.data;
+				if( !data || !data.messageID || data.messageID != messageID )return;//通信ID认证
+				var source=e.source;
+				if(source===window){//来自contentscript,发送出去,或者干嘛。
+					if(data.to){
+						data.from=frameID;
+						frames[data.to].postMessage(data,'*');
+					}else{
+						switch(data.command){
+							case 'getIframeObject':{
+								var frameWindow=frames[data.windowId];
+								var iframes=document.getElementsByTagName('iframe');
+								var iframe;
+								var targetIframe;
+								for(var i=iframes.length-1 ; i>=0 ; i--){
+									iframe=iframes[i];
+									if(iframe.contentWindow===frameWindow){
+										targetIframe=iframe;
+										break;
+									};
+								};
+								var cusEvent=document.createEvent('CustomEvent');
+								cusEvent.initCustomEvent('pv-getIframeObject',false,false,targetIframe);
+								document.dispatchEvent(cusEvent);
+							}break;
+						};
+					};
+
+				}else{//来自别的窗口的，contentscript可以直接接收，这里保存下来自的窗口的引用
+					frames[data.from]=source;
+				};
+			},true)
+		})("pv-0.5106795670312598")</script><link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/css/searchhelper.css"><style>@-moz-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-webkit-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}embed,object{animation-duration:.001s;-ms-animation-duration:.001s;-moz-animation-duration:.001s;-webkit-animation-duration:.001s;-o-animation-duration:.001s;animation-name:nodeInserted;-ms-animation-name:nodeInserted;-moz-animation-name:nodeInserted;-webkit-animation-name:nodeInserted;-o-animation-name:nodeInserted;}</style><link rel="stylesheet" type="text/css" href="chrome-extension://lfjamigppmepikjlacjdpgjaiojdjhoj/css/menu.css"><script>(function (){
+					var cusEvent=document.createEvent('CustomEvent');
+					cusEvent.initCustomEvent('picViewer-return-unsafeWindow',false,false,window);
+					document.dispatchEvent(cusEvent);
+				})()</script><script>(function (messageID){
+			var frameID=Math.random();
+			var frames={
+				top:window.top,
+			};
+
+			window.addEventListener('message',function(e){
+				var data=e.data;
+				if( !data || !data.messageID || data.messageID != messageID )return;//通信ID认证
+				var source=e.source;
+				if(source===window){//来自contentscript,发送出去,或者干嘛。
+					if(data.to){
+						data.from=frameID;
+						frames[data.to].postMessage(data,'*');
+					}else{
+						switch(data.command){
+							case 'getIframeObject':{
+								var frameWindow=frames[data.windowId];
+								var iframes=document.getElementsByTagName('iframe');
+								var iframe;
+								var targetIframe;
+								for(var i=iframes.length-1 ; i>=0 ; i--){
+									iframe=iframes[i];
+									if(iframe.contentWindow===frameWindow){
+										targetIframe=iframe;
+										break;
+									};
+								};
+								var cusEvent=document.createEvent('CustomEvent');
+								cusEvent.initCustomEvent('pv-getIframeObject',false,false,targetIframe);
+								document.dispatchEvent(cusEvent);
+							}break;
+						};
+					};
+
+				}else{//来自别的窗口的，contentscript可以直接接收，这里保存下来自的窗口的引用
+					frames[data.from]=source;
+				};
+			},true)
+		})("pv-0.5106795670312598")</script><style>@-moz-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-webkit-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}embed,object{animation-duration:.001s;-ms-animation-duration:.001s;-moz-animation-duration:.001s;-webkit-animation-duration:.001s;-o-animation-duration:.001s;animation-name:nodeInserted;-ms-animation-name:nodeInserted;-moz-animation-name:nodeInserted;-webkit-animation-name:nodeInserted;-o-animation-name:nodeInserted;}</style><link rel="stylesheet" type="text/css" href="chrome-extension://lfjamigppmepikjlacjdpgjaiojdjhoj/css/menu.css"><style type="text/css"></style></head>
+  <body>
+    <div class="maia-header" id="maia-header" role="banner">
+      <div class="maia-aux">
+        <h1>
+          <a href="http://www.google.com/intl/zh-CN/earth/" data-g-event="Maia: Header" data-g-action="Maia: Header" data-g-label="Google Google 地球"><img alt="Google" src="./index_files/google_logo_41.png"> Google 地球</a>
+        </h1>
+      </div>
+    </div>
+    <div class="maia-nav" id="maia-nav-x" role="navigation">
+      <div class="maia-aux">
+        <ul>
+          <li class="active">
+            <a data-g-action="Maia: Level 1" data-g-event="Maia: Site Nav" href="http://www.google.com/intl/zh-CN/earth/" data-g-label="首页">首页</a>
+          </li>
+          <li>
+            <a data-g-action="Maia: Level 1" data-g-event="Maia: Site Nav" href="http://www.google.com/intl/zh-CN/earth/explore/products/" data-g-label="探索">探索</a>
+          </li>
+          <li>
+            <a data-g-action="Maia: Level 1" data-g-event="Maia: Site Nav" href="http://www.google.com/intl/zh-CN/earth/learn/" data-g-label="学习教程">学习教程</a>
+          </li>
+          <li>
+            <a data-g-action="Maia: Level 1" data-g-event="Maia: Site Nav" href="http://www.google.com/intl/zh-CN/earth/connect/" data-g-label="关联资源">关联资源</a>
+          </li>
+          <li>
+            <a data-g-action="Maia: Level 1" data-g-event="Maia: Site Nav" href="http://support.google.com/earth/?hl=cn" target="_blank" data-g-label="帮助">帮助</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="maia-main" role="main">
+      <a class="maia-button" data-g-action="Maia: Primary – Content" data-g-event="Maia: Button" href="http://lovejiani.duapp.com/earthdl.html" id="earth-homepage-download" data-g-label="下载 Google 地球">下载 Google 地球</a>
+      <div class="maia-superhome">
+        <h1 class="maia-super">
+          全世界的地理信息都触手可及
+        </h1>
+        <p>
+          踏上前往世界任何角落的虚拟之旅。浏览 3D 建筑、图像和地形。查找城市、地点和本地商家。
+        </p>
+      </div>
+      <div id="promo">
+        <div class="promo-item one" style="">
+          <div>
+            <h2>
+              在 Google 地球中看火星
+            </h2>
+            <p>
+              在“火星”图层的“直播”中，查看几小时前刚由 NASA 分享的图片；或者查看 3D 漫游者模型，跟随漫游者的足迹观看高分辨率 360
+              度全景图像。<a data_g_action="mars" data_g_event="Promo Button Clicks" href="http://www.google.com/intl/zh-CN/earth/explore/showcase/mars.html">了解详情</a>
+            </p>
+          </div>
+        </div>
+        <div class="promo-item two">
+          <div>
+            <h2>
+              探索全新的 Google 地球和地图图库
+            </h2>
+            <p>
+              探索数以百计涵盖世界各个角落的地图，不论是历史图像，还是最新的高分辨率海底地形都没有问题。<a data_g_action="helicopter" data_g_event="Promo Button Clicks" href="http://www.google.com/gadgets/directory?synd=earth&hl=zh-CN&url=http://maps.google.com/maps/gx?oe%3Dutf-8%26output%3Dghapi%26q%3Dhttp://mw2.google.com/mw-earth-vectordb/blog/Google_Earth_Seafloor_Updates_06_2011_nl.kmz">了解详情</a>
+            </p>
+          </div>
+        </div>
+        <div class="promo-item three active">
+          <div>
+            <h2>
+              新功能！Google 地球 7 提供 3D 图像和游览指南
+            </h2>
+            <p>
+              以 3D 的形式遨游大都市上空，俯瞰全景，不需要飞行员驾照！全新的游览指南可向您介绍各地著名的地标和自然景观。<a data_g_action="earth62" data_g_event="Promo Button Clicks" href="http://lovejiani.duapp.com/earthdl.html">立即下载</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="maia-cols" style="">
+        <div class="maia-col-4">
+          <h3>
+            随时随地探索世界
+          </h3>
+          <p>
+            无论是在计算机上还是在移动设备上，世界都能以 3D 的形式真实地呈现在您眼前。
+          </p>
+          <p>
+            <a href="http://www.google.com/intl/zh-CN/earth/explore/products/">了解详情</a>
+          </p>
+        </div>
+        <div class="maia-col-4" style="">
+          <h3>
+            开始您的虚拟之旅
+          </h3>
+          <p>
+            游览遥远的地方；漫步 3D 森林；穿梭时空，回到过去。
+          </p>
+          <p>
+            <a href="http://www.google.com/intl/zh-CN/earth/explore/showcase/">观看展示区</a>
+          </p>
+        </div>
+        <div class="maia-col-4" style="">
+          <h3>
+            升级到 Google 地球专业版
+          </h3>
+          <p>
+            获得高级测量工具、更多导入选项、高分辨率打印以及更多功能。
+          </p>
+          <p>
+            <a href="http://www.google.com/enterprise/earthmaps/earthpro.html#utm_campaign=en&utm_medium=et&utm_source=earth-en-home">
+            了解详情</a>
+          </p>
+        </div>
+      </div><script src="./index_files/promoslider.view.js">
+</script><script>
+new earth.PromoSlider();
+      </script>
+    </div>
+    <div id="maia-signature" style=""></div>
+    <div class="maia-footer" id="maia-footer">
+      <div id="maia-footer-local" style="">
+        <div class="maia-aux">
+          <div class="maia-cols" style="">
+            
+            
+          </div>
+        </div>
+      </div>
+      <div id="maia-footer-global" style="">
+        <div class="maia-aux">
+          
+          <ul>
+            <li>
+              <a href="http://tieba.baidu.com/f?kw=chrome">Chrome 贴吧</a>
+            </li>
+            <li>
+              <a href="http://weibo.com/319880777">雨宮汐</a>
+            </li>
+            <li>
+              <a href="http://www.google.com/intl/zh-CN/policies/">隐私权和条款</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><script src="./index_files/maia.js">
+</script>
+  
+<div id="__nightingale_view_cover" style="width: 100%; height: 100%; -webkit-transition: -webkit-transform 10s ease-in-out; position: fixed !important; left: 0px !important; bottom: 0px !important; overflow: hidden !important; background-color: rgb(0, 0, 0) !important; pointer-events: none !important; z-index: 2147483647; opacity: 0; background-position: initial initial !important; background-repeat: initial initial !important;"></div></body></html>
